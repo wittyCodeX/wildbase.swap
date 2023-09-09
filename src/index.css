@@ -1,13 +1,43 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'NippoBold';
+  src: local('NippoBold'), url('/public/fonts//NippoBold.ttf') format('opentype');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'NippoExtralight';
+  src: local('NippoExtralight'),
+    url('/public/fonts//NippoExtralight.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NippoLight';
+  src: local('NippoLight'),
+    url('/public/fonts//NippoLight.ttf') format('opentype');
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'NippoLight' !important;
+  background-color: #16171E;
+}
+
+.bg-main-100 {
+  background-color: #1F212A !important;
+}
+
+.bg-main-200 {
+  background-color: #16171E !important;
+}
+
+.bg-yellow-main {
+  background-color: #FFC412 !important;
+}
+
+.text-yellow-main {
+  color: #FFC412 !important;
 }
